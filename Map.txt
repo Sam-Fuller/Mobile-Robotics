@@ -1,0 +1,30 @@
+% MapFile MG for coursework .txt
+% Copyright (C) De Montfort University
+% This code is released under the open-source BSD license.  A copy of this
+% license should be provided with the software.
+
+% File containing map information
+% Robot starting position: any inside central room
+% Robot ending position: spot-on in the centre of the room
+
+% The enclosing walls
+wall -4.9  4.9  4.9  4.9
+wall -4.9 -4.9  4.9 -4.9
+wall  4.9 -4.9  4.9  4.9
+wall -4.9 -4.9 -4.9  4.9
+
+% The room in the middle
+wall  1.5  2  1.5 -2
+wall -1.5  2 -1.5  0.3
+wall -1.5 -2 -1.5 -0.3
+wall -1.5  2  1.5  2
+wall -1.5 -2  1.5 -2
+
+% A beacon to find and bump
+% should be changed to a few random postions to experiment with
+% the short line should cross it in any orientation
+beacon 3 4 [0 0 1] s
+wall  3 4.25 3 3.75
+%e.g.:
+% beacon 0 -3 [0 0 1] s
+% wall -0.25 -3.25 0.25 -2.75
